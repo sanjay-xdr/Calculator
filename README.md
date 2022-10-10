@@ -1,5 +1,5 @@
 # Calculator
-Calculator Made with HTML CSS and JS
+Calculator Made with HTML CSS and JS <a href="https://calculatorcg1.netlify.app/">Live</a>
 
 
 <h3>A Simple Calculator made using HTML , CSS and JS </h3>
