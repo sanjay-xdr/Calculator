@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div id="history-btn">
+          <span class="material-symbols-outlined showhistory" id="myBtn">
+            history
+          </span>
+        </div>
+        <div class="output">
+          <div class="history" id="history"></div>
+          <textarea class="input-area" id="textarea"></textarea>
+        </div>
+
+        <div class="buttons">
+          <div class="special-row">
+            <button class="other-btn readbtn">%</button>
+            <button class="other-btn" id="btn-del">CE</button>
+            <button class="other-btn" id="btn-clear">AC</button>
+            <button class="other-btn readbtn">/</button>
+          </div>
+
+          <div class="row">
+            <button class="readbtn">7</button>
+            <button class="readbtn">8</button>
+            <button class="readbtn">9</button>
+            <button class="readbtn">*</button>
+          </div>
+
+          <div class="row">
+            <button class="readbtn">4</button>
+            <button class="readbtn">5</button>
+            <button class="readbtn">6</button>
+            <button class="readbtn">-</button>
+          </div>
+
+          <div class="row">
+            <button class="readbtn">1</button>
+            <button class="readbtn">2</button>
+            <button class="readbtn">3</button>
+            <button class="readbtn">+</button>
+          </div>
+
+          <div class="row">
+            <button>&nbsp;</button>
+            <button class="readbtn">0</button>
+            <button class="readbtn">.</button>
+            <button id="calculate">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <hr />
+      </div>
+    </div>
+
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

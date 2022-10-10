@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shadow-primary: 11px 14px 35px 5px rgba(0, 0, 0, 0.41);
+  --primary-color: #fff;
+  --secondary-color: rebeccapurple;
+  --input-color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+}
+
+.wrapper {
+  width: 25rem;
+  height: 45rem;
+  box-shadow: var(--shadow-primary);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+}
+
+.output {
+  height: 15rem;
+  width: 25rem;
+  color: var(--primary-color);
+  background-color: var(--input-color);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.history {
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: 32px;
+  background-color: var(--input-color);
+  color: var(--primary-color);
+  font-weight: 900;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.history,
+.input-area {
+  text-align: right;
+  padding: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.row {
+  margin: 1rem 1rem;
+}
+
+.other-btn {
+  font-size: 26px;
+  color: grey;
+  font-weight: 600;
+}
+
+button {
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0.7rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#calculate {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: 0.2s linear;
+}
+
+#calculate:hover {
+  filter: brightness(0.9);
+}
+
+#history-btn {
+  position: absolute;
+  top: 10px;
+  color: var(--primary-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.showhistory {
+  font-size: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: var(--primary-color);
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.query {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.result {
+  font-size: 24px;
+  padding: 10px 0;
+}
