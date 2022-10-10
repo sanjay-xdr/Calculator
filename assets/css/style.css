@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 :root {
@@ -17,6 +18,9 @@
   height: 125vh;
 }
 
+
+
+
 .wrapper {
   width: 25rem;
   height: 45rem;
@@ -25,7 +29,9 @@
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  position: relative;
+  position: absolute;
+
+ 
 }
 
 .output {
@@ -38,6 +44,7 @@
   flex-direction: column;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+ 
 }
 
 .history {
@@ -56,6 +63,7 @@ textarea {
   font-weight: 900;
   line-height: 1;
   overflow: hidden;
+ 
 }
 
 .history,
@@ -70,6 +78,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
+ 
 }
 
 .row {
@@ -91,6 +100,7 @@ button {
   font-weight: 700;
   margin: 0 0.7rem;
   border: none;
+ 
   cursor: pointer;
   transition: 0.2s ease-in-out;
   box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
@@ -121,6 +131,10 @@ button:active {
   color: var(--primary-color);
   padding: 10px;
   cursor: pointer;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .heading {
@@ -129,7 +143,7 @@ button:active {
   padding: 10px 0;
 }
 
-.showhistory {
+.showhistory,.darkmodeBtn {
   font-size: 30px;
 }
 
@@ -203,3 +217,49 @@ button {
 
 
 }
+
+
+/* dark mode */
+.wrapper-dark-background{
+  background-color: black;
+ 
+ }
+ 
+ .output-dark-background{
+   color: #fff;
+ 
+    background-color: #18181b; 
+ }
+ 
+ .textarea-dark-background{
+     background-color: #18181b;
+     color: #fff;
+ }
+ 
+ 
+ 
+ .buttons-dark-mode{
+     background-color: black; 
+     color: #fff;
+ }
+ 
+ .button-dark-mode{
+      color: #fff; 
+    background-color: black; 
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(3, 3, 3, 0.7),
+                -6px -6px 10px rgba(26, 23, 23, 0.5),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+ }
+ 
+ 
+ 
+ .button-dark-mode:active {
+   box-shadow: inset -2px -2px 6px rgba(20, 14, 14, 0.7),
+               inset -2px -2px 4px rgba(17, 12, 12, 0.5),
+               inset 2px 2px 2px rgba(255, 255, 255, .075),
+               inset 2px 2px 4px rgba(0, 0, 0, .15);
+ }
+
+
